@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARMOR — Die Kunst des Steaks</title>
+    <meta
+      name="description"
+      content="Entdecke die wichtigsten Steakarten, Garstufen und Zubereitungstipps. Eine moderne Guide-Seite über Steak — auf Deutsch."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="nav__brand" href="#top">
+        <span class="nav__mark">M</span>
+        <span>MARMOR</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Hauptnavigation">
+        <a href="#steakarten">Steakarten</a>
+        <a href="#garstufen">Garstufen</a>
+        <a href="#zubereitung">Zubereitung</a>
+        <a href="#wissen">Wissen</a>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__media">
+          <img
+            src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=2200&q=80"
+            alt="Gegrilltes Ribeye-Steak mit Kräuterbutter auf rustikalem Holzbrett"
+          />
+        </div>
+        <div class="hero__veil"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Guide · Schnitt · Glut</p>
+          <h1>Die Kunst<br /><em>des Steaks</em></h1>
+          <p class="hero__lead">
+            Von Filet bis Tomahawk: lerne die wichtigsten Cuts, die richtige Garstufe
+            und warum Marmorierung den Unterschied macht.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#steakarten">Steakarten entdecken</a>
+            <a class="btn btn--ghost" href="#garstufen">Garstufen verstehen</a>
+          </div>
+        </div>
+        <div class="hero__meta">
+          <span>12 Cuts</span>
+          <span>5 Garstufen</span>
+          <span>Dry Aged</span>
+        </div>
+      </section>
+
+      <section class="intro" id="wissen-start">
+        <div class="wrap intro__grid">
+          <div>
+            <p class="eyebrow">Was ist Steak?</p>
+            <h2>Ein Schnitt. Ein Ritual. Ein Geschmack.</h2>
+          </div>
+          <div class="intro__copy">
+            <p>
+              Steak ist kein beliebiges Stück Fleisch — es ist ein präziser Schnitt aus dem Rind,
+              gewählt nach Faserverlauf, Fettanteil und Zartheit. Die besten Steaks leben von
+              <strong>Marmorierung</strong>: feinen intramuskulären Fettadern, die beim Braten
+              schmelzen und Saft, Aroma und Kruste erzeugen.
+            </p>
+            <p>
+              Ob klassisches Rumpsteak aus der Hüfte oder opulentes Tomahawk vom Knochen:
+              jedes Stück erzählt, wo es am Tier saß — und wie es gegart werden will.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cuts" id="steakarten">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Cuts</p>
+              <h2>Welche Arten von Steak gibt es?</h2>
+              <p class="section-head__lead">
+                Zwölf der wichtigsten Steaks — von zartem Filet bis zum intensiven Flank.
+              </p>
+            </div>
+            <div class="filters" role="tablist" aria-label="Steakfilter">
+              <button class="filter is-active" data-filter="all">Alle</button>
+              <button class="filter" data-filter="premium">Premium</button>
+              <button class="filter" data-filter="klassiker">Klassiker</button>
+              <button class="filter" data-filter="grill">Grill</button>
+            </div>
+          </div>
+
+          <div class="card-grid" id="steak-grid"></div>
+        </div>
+      </section>
+
+      <section class="doneness" id="garstufen">
+        <div class="wrap doneness__grid">
+          <div>
+            <p class="eyebrow">Temperatur</p>
+            <h2>Garstufen — vom Blutigen bis zum Durchgebratenen</h2>
+            <p>
+              Die Garstufe entscheidet über Saft, Farbe und Biss. Klicke eine Stufe —
+              wir zeigen Kernfarbe, Kerntemperatur und den typischen Charakter.
+            </p>
+            <div class="doneness__list" id="doneness-list"></div>
+          </div>
+          <article class="doneness__panel" id="doneness-panel"></article>
+        </div>
+      </section>
+
+      <section class="prep" id="zubereitung">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Handwerk</p>
+              <h2>Zubereitung, die das Fleisch ehrt</h2>
+            </div>
+          </div>
+          <div class="prep__grid">
+            <article class="prep-card">
+              <span>01</span>
+              <h3>Raumtemperatur</h3>
+              <p>
+                Nimm das Steak 30–45 Minuten vor dem Braten aus dem Kühlschrank.
+                Kaltes Fleisch gart ungleichmäßig und bleibt innen zu kühl.
+              </p>
+            </article>
+            <article class="prep-card">
+              <span>02</span>
+              <h3>Trocken & Salz</h3>
+              <p>
+                Patte es trocken, salze großzügig. Trockene Oberfläche plus hohe Hitze
+                ergibt die Maillard-Kruste — das dunkle, nussige Aroma.
+              </p>
+            </article>
+            <article class="prep-card">
+              <span>03</span>
+              <h3>Glut, nicht Dampf</h3>
+              <p>
+                Gusseisen oder Grill, sehr heiß. Wenig wenden. Butter, Thymian und Knoblauch
+                erst gegen Ende — sonst verbrennen die Aromen.
+              </p>
+            </article>
+            <article class="prep-card">
+              <span>04</span>
+              <h3>Ruhen lassen</h3>
+              <p>
+                5–10 Minuten unter Folie oder auf einem warmen Teller. Der Saft verteilt sich,
+                das Steak bleibt beim Anschneiden saftig.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="aging" id="wissen">
+        <div class="wrap aging__grid">
+          <figure class="aging__photo">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80"
+              alt="Saftiges Steak mit Kräutern und Pfeffer auf dunklem Teller"
+            />
+          </figure>
+          <div>
+            <p class="eyebrow">Reifung</p>
+            <h2>Dry Aged & Wet Aged</h2>
+            <div class="aging__cols">
+              <div>
+                <h3>Dry Aged</h3>
+                <p>
+                  Am Knochen, an der Luft, über Wochen. Wasser verdunstet, Enzyme arbeiten —
+                  das Fleisch wird nussig, intensiv, fast käsig im Duft. Ein Ritual für Puristen.
+                </p>
+              </div>
+              <div>
+                <h3>Wet Aged</h3>
+                <p>
+                  Vakuumgereift, saftig und milder. Der klassische Supermarkt- und Restaurantweg:
+                  zart, sauber im Geschmack, ohne den trockenen Charakter des Dry Aging.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div>
+          <strong>MARMOR</strong>
+          <p>Ein visueller Guide über Steak, Cuts und Garstufen.</p>
+        </div>
+        <p>© 2026 MARMOR · Nur für Genuss und Wissen.</p>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="steak-modal">
+      <article class="modal__card">
+        <button class="modal__close" id="modal-close" aria-label="Schließen">×</button>
+        <div class="modal__media">
+          <img id="modal-image" alt="" />
+        </div>
+        <div class="modal__body">
+          <p class="eyebrow" id="modal-category"></p>
+          <h2 id="modal-title"></h2>
+          <p id="modal-text"></p>
+          <dl class="facts" id="modal-facts"></dl>
+        </div>
+      </article>
+    </dialog>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
