@@ -65,7 +65,7 @@ const steaks = [
     category: "grill",
     tag: "Grill",
     image:
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=1200&q=80",
     summary: "Filet und Strip an einem T-förmigen Knochen.",
     text: "Das T-Bone vereint zwei Welten: zartes Filet auf der einen, kräftiges Roastbeef auf der anderen Seite. Der Knochen speichert Hitze und gibt Röstaroma. Am Grill ein Schauspiel.",
     facts: {
@@ -95,7 +95,7 @@ const steaks = [
     category: "premium",
     tag: "Premium",
     image:
-      "https://images.unsplash.com/photo-1615937657715-bc7b11e749db?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1633237308525-cd587cf71926?auto=format&fit=crop&w=1200&q=80",
     summary: "Ribeye am langen Rippenknochen — das Showpiece.",
     text: "Ein Tomahawk ist im Kern ein Ribeye, aber mit langem, frenched Knochen. Es wirkt archaisch und modern zugleich. Wegen der Dicke braucht es indirekte Hitze nach der Kruste.",
     facts: {
@@ -155,7 +155,7 @@ const steaks = [
     category: "klassiker",
     tag: "Klassiker",
     image:
-      "https://images.unsplash.com/photo-1615937691194-97db32e5d19c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?auto=format&fit=crop&w=1200&q=80",
     summary: "Aus der Schulter, überraschend zart — ein Geheimtipp.",
     text: "Das Flat Iron kommt aus der Schulterklappe. Richtig ausgelöst ist es fast so zart wie Filet, aber deutlich aromatischer. In modernen Steakhäusern ein stiller Favorit.",
     facts: {
